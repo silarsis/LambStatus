@@ -1,10 +1,10 @@
 # LambStatus
 
-[![Launch CloudFormation Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=StatusPage&templateURL=https://s3-ap-northeast-1.amazonaws.com/lambstatus/cf-template/0.6.6/lamb-status.yml)
-[![wercker status](https://app.wercker.com/status/fcb6fb7398629e934ae0538737021d14/s/master "wercker status")](https://app.wercker.com/project/byKey/fcb6fb7398629e934ae0538737021d14)
-[![API Document](https://img.shields.io/badge/api-v0-blue.svg)](https://lambstatus.github.io/apidocs/)
+This project is cloned from https://github.com/ks888/LambStatus because that project has gone into maintenance mode, but I want to run some tools (lgtm in particular) that don't work on forks and make some changes.
 
-*The project is now in the maintenance mode. Only critical bugs will be fixed, and there won’t be any more feature development. Also, the project will be archived after the end of February 2020. So please consider moving to other projects like [Cachet](https://github.com/CachetHQ/Cachet).*
+Documentation below is largely original with the original links.
+
+[![API Document](https://img.shields.io/badge/api-v0-blue.svg)](https://lambstatus.github.io/apidocs/)
 
 LambStatus is the serverless status page system. [See our website](https://lambstatus.github.io/) for features.
 
