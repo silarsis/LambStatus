@@ -1,5 +1,8 @@
 # LambStatus
 
+[![codebeat badge](https://codebeat.co/badges/b4bdd1cc-0207-4aa2-8bba-355302e2a35a)](https://codebeat.co/projects/github-com-silarsis-lambstatus-master)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/silarsis/LambStatus.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/silarsis/LambStatus/alerts/)
+
 This project is cloned from https://github.com/ks888/LambStatus because that project has gone into maintenance mode, but I want to run some tools (lgtm in particular) that don't work on forks and make some changes.
 
 Documentation below is largely original with the original links.
