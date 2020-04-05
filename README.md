@@ -1,5 +1,6 @@
 # LambStatus
 
+![(Compile and test)](https://github.com/silarsis/LambStatus/workflows/(Unnamed%20workflow)/badge.svg)
 [![codebeat badge](https://codebeat.co/badges/b4bdd1cc-0207-4aa2-8bba-355302e2a35a)](https://codebeat.co/projects/github-com-silarsis-lambstatus-master)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/silarsis/LambStatus.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/silarsis/LambStatus/alerts/)
 
