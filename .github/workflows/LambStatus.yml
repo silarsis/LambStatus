@@ -15,18 +15,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Lambda
-      with:
-        cwd: packages/lambda
-      run: npm ci
-      run: npm run lint
-      run: npm run test:coverage
+      run: |
+        cd packages/lambda
+        npm ci
+        npm run build --if-present
+        npm run lint
+        npm run test:coverage
+        cd ../..
     - name: Frontend
-      with:
-        cwd: packages/frontend
-      run: npm ci
-      run: npm run lint
-    - run: npm install
-    - run: npm run build --if-present
-    - run: npm test
+      run: |
+        cd packages/frontend
+        npm ci
+        npm run build --if-present
+        npm run lint
+        cd ../..
       env:
         CI: true
