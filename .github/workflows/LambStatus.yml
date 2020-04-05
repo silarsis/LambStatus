@@ -3,7 +3,7 @@ name: Lambda Status Page
 on: [push]
 
 jobs:
-  build:
+  frontend:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -14,15 +14,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-#     - name: Lambda
-#       run: |
-#         cd packages/lambda
-#         npm ci
-#         npm run build --if-present
-#         npm run lint
-#         npm run test:coverage
-#         cd ../..
-    - name: Frontend
+    - name: Build and test
       run: |
         cd packages/frontend
         npm ci
@@ -31,3 +23,23 @@ jobs:
         cd ../..
       env:
         CI: true
+  backend:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Build and test
+      run: |
+        cd packages/lambda
+        npm ci
+        npm run build --if-present
+        npm run lint
+        npm run test:coverage
+        cd ../..
+    
